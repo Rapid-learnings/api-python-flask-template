@@ -1,0 +1,24 @@
+# general python ignore files
+*.py[cod]
+*$py.class
+__pycache__
+
+# ignore all .env files
+.env
+
+# ignore all .DS_Store files
+.DS_Store
+
+# ignore all .vscode files
+.vscode
+
+# venv
+venv/
+.venv/
+
+secret.key
+
+# JetBrains
+.idea/
+
+gcp_creds.json

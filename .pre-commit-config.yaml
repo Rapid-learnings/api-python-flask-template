@@ -1,0 +1,15 @@
+fail_fast: true # This will stop the commit if any of the hooks fail
+repos:
+  - repo: local # local hooks are stored under the .pre-commit-hooks.yaml file
+    hooks:
+      - id: black
+        name: black
+        entry: poetry run black
+        language: system
+        types: [file, python]
+      - id: isort
+        name: isort
+        entry: poetry run isort
+        language: system
+        always_run: true # This will run the hook even if no files have been modified
+        types: [file, python]
